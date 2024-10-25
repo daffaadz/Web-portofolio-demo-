@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+h2{
+    padding-bottom: 20px;
+}
+h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px 10px;
+}
+
+img {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.Gambar:hover {
+    width: 13rem;
+    height: 18rem;
+    transition: 500ms;
+    opacity: 50;
+}
+.carousel{
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #76c7c0;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+}
+
+.burger-menu .line {
+    width: 100%;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+}
+
+/* Carousel Styles */
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: start;
+    scroll-behavior: smooth;
+}
+
+.carousel-slide {
+    display: flex;
+}
+
+.project-card {
+    background-color: #1f1f1f;
+    margin: 0 15px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #76c7c0;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #aaaaaa;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+}
